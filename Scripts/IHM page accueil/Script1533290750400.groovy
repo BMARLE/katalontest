@@ -19,3 +19,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.google.com/?gws_rd=ssl')
+
+WebUI.setText(findTestObject('Page_robots of - Recherche Google/input_q'), 'robots of')
+
+WebUI.sendKeys(findTestObject('Page_robots of - Recherche Google/input_q'), Keys.chord(Keys.ENTER))
+
+WebUI.setText(findTestObject('Page_robots of - Recherche Google/input_q'), 'robots of')
+
+WebUiBuiltInKeywords.closeBrowser()
+
